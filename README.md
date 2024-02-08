@@ -23,7 +23,7 @@ git clone https://github.com/JamesonHenrique/User-Management.git
 
 2. Abra o projeto em seu IDE
    
-4. Altere o usuario e senha para que o projeto possa acessar o banco mysql.
+3. Altere o usuario e senha para que o projeto possa acessar o banco mysql.
 
       Vá até /src/main/resources/application.properties;
 
@@ -33,13 +33,13 @@ git clone https://github.com/JamesonHenrique/User-Management.git
       spring.datasource.username=usuario
 
       spring.datasource.password=usuario
-6. Crie o banco de dados utilizando o Docker:
+4. Crie o banco de dados utilizando o Docker:
 ```bash
 docker-compose up -d
 ```
 
-. Compile e execute o projeto
+5. Compile e execute o projeto
 
-. Use o Swagger de preferencia para testar a api ou o que você preferir
+6. Use o Swagger de preferencia para testar a api ou o que você preferir
    
       http://localhost:8080/swagger-ui/index.html
