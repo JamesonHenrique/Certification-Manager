@@ -1,5 +1,7 @@
 NLW - Trilha Java
+
 💻 Sobre o projeto
+
 O projeto NLW - Trilha Java é uma aplicação back end em Java e utiliza banco de dados relacional PostgreSQL. O objetivo é construir uma API RESTful que permita gerenciar certificaçoes de estudantes ao responder questões.
 
 
