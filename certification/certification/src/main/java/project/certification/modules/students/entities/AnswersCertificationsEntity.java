@@ -1,4 +1,4 @@
-package project.certification.modules.students.entity;
+package project.certification.modules.students.entities;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -24,7 +24,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity(name = "answers_certification_students")
 @Builder
-public class AnswersCertifications {
+public class AnswersCertificationsEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -36,14 +36,14 @@ public class AnswersCertifications {
     @ManyToOne()
     @JoinColumn(name = "certification_id", insertable = false, updatable = false)
     @JsonBackReference
-    private CertificationStudent certificationStudentEntity;
+    private CertificationStudentEntity certificationStudentEntity;
 
     @Column(name = "student_id")
     private UUID studentID;
 
     @ManyToOne
     @JoinColumn(name = "student_id", insertable = false, updatable = false)
-    private Student studentEntity;
+    private StudentEntity studentEntity;
 
     @Column(name = "question_id")
     private UUID questionID;

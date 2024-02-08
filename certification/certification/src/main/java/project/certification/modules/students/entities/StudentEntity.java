@@ -1,4 +1,4 @@
-package project.certification.modules.students.entity;
+package project.certification.modules.students.entities;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -20,14 +20,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import project.certification.modules.students.entity.CertificationStudent;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "students")
 @Builder
-public class Student {
+public class StudentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -43,7 +42,7 @@ public class Student {
 
     @OneToMany(mappedBy = "studentEntity")
     @JsonBackReference
-    private List<CertificationStudent> certificationStudentEntity;
+    private List<CertificationStudentEntity> certificationStudentEntity;
 
     @CreationTimestamp
     private LocalDateTime createdAt;

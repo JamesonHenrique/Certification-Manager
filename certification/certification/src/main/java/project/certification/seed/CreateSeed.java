@@ -2,7 +2,6 @@ package project.certification.seed;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import javax.sql.DataSource;
@@ -20,10 +19,10 @@ public class CreateSeed {
 
     public static void main(String[] args) {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/certification");
-        dataSource.setUsername("root");
-        dataSource.setPassword("root");
+        dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setUrl("jdbc:postgresql://localhost:5434/pg_nlw");
+        dataSource.setUsername("admin");
+        dataSource.setPassword("admin");
 
         CreateSeed createSeed = new CreateSeed(dataSource);
         createSeed.run(args);

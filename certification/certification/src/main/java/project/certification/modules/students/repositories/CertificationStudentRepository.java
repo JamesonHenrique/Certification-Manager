@@ -1,4 +1,4 @@
-package project.certification.modules.students.repository;
+package project.certification.modules.students.repositories;
 
 import java.util.List;
 import java.util.UUID;
@@ -6,16 +6,16 @@ import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import project.certification.modules.students.entity.CertificationStudent;
 
+import project.certification.modules.students.entities.CertificationStudentEntity;
 
 @Repository
-public interface CertificationStudentRepository extends JpaRepository<CertificationStudent, UUID> {
+public interface CertificationStudentRepository extends JpaRepository<CertificationStudentEntity, UUID> {
 
     @Query("SELECT c FROM certifications c INNER JOIN c.studentEntity std WHERE std.email = :email AND c.technology = :technology")
-    List<CertificationStudent> findByStudentEmailAndTechnology(String email, String technology);
+    List<CertificationStudentEntity> findByStudentEmailAndTechnology(String email, String technology);
 
     @Query("SELECT c from certifications c ORDER BY c.grade DESC LIMIT 10")
-    List<CertificationStudent> findTop10ByOrderByGradeDesc();
+    List<CertificationStudentEntity> findTop10ByOrderByGradeDesc();
 
 }

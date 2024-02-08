@@ -1,14 +1,20 @@
 package project.certification.modules.students.dto;
 
+import java.util.UUID;
+
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class VerifyHasCertificationDTO {
+public class QuestionAnswerDTO {
 
-    private String email;
-    private String technology;
+    private UUID questionID;
+    private UUID alternativeID;
+    private boolean isCorrect;
+
 }

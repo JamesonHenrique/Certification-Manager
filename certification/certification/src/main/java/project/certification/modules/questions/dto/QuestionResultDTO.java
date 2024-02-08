@@ -1,4 +1,5 @@
 package project.certification.modules.questions.dto;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -11,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class QuestionsResultDTO {
+public class QuestionResultDTO {
 
     private UUID id;
     private String technology;
