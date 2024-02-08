@@ -9,10 +9,15 @@ O projeto NLW - Trilha Java é uma aplicação back end em Java e utiliza banco 
 🔧 Tecnologias utilizadas
 
 Java 
+
 Spring Boot
+
 PostgreSQL
+
 JPA / Hibernate
+
 Docker
+
 Swagger
 
 ## Como usar
