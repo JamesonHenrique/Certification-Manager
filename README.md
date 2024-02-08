@@ -50,3 +50,6 @@ docker-compose up -d
 6. Use o Swagger de preferencia para testar a api ou o que você preferir
    
       http://localhost:8080/swagger-ui/index.html
+# Contribuições são bem-vindas! 
+
+Se você quiser melhorar este projeto de alguma forma, sinta-se à vontade para criar um fork e enviar um pull request com suas melhorias.
