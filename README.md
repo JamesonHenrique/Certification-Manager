@@ -18,7 +18,7 @@ Swagger
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/JamesonHenrique/User-Management.git
+git clone https://github.com/JamesonHenrique/Certification_nlw.git
 ```
 
 2. Abra o projeto em seu IDE
